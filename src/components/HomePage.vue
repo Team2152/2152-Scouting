@@ -1,6 +1,7 @@
 <template>
-  <h1>Black Hawks Scouting</h1>
-  <h2>Form Selection</h2>
+  <h1>2152 SMASH Scouting</h1>
+  <img :src="absoluteLogoPath" alt="Cannot load logo file" class="center" width="300" height="75">
+  <h2>Scouting Forms</h2>
   <ul v-if="list.length > 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
@@ -21,6 +22,8 @@
 
 <script setup lang="ts">
 import { FetchError } from "@/common/shared";
+
+const absoluteLogoPath = $computed(() => `${import.meta.env.BASE_URL}assets/home_icon.png`);
 
 const version = APP_VERSION;
 
