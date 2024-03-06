@@ -73,11 +73,10 @@
           "type": "dropdown",
           "options": [
             "No swerve",
-            "L1",
-            "L2",
-            "L3",
-            "L4",
-            "Invert",
+            "MK4",
+            "MK4i",
+            "MaxSwerve",
+            "ServerX",
             "Custom"
           ]
         }

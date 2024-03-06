@@ -25,11 +25,11 @@ export default defineConfig({
     VitePWA({
       includeAssets: ["assets/*", "icons/*"],
       manifest: {
-        name: "Black Hawks Scouting",
+        name: "S*M*A*S*H Scouting",
         short_name: "Scouting",
-        description: "A scouting app by FRC Team 2834",
-        theme_color: "#292929",
-        background_color: "#292929",
+        description: "A scouting app by FRC Team 2152",
+        theme_color: "#FF6400",
+        background_color: "#FF6400",
         icons: [
           {
             src: "icons/pwa-192x192.png",
